@@ -154,7 +154,7 @@
 
             <!-- Portfolio Item -->
             <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   appleIOS isotope-item">
-                <div class="portfolio_img"> <img src="img/portfolio_pic1.jpg"  alt="Portfolio 1"> </div>
+                <div class="portfolio_img"> <img src="{{ asset('assets/img/portfolio_pic1.jpg') }}"  alt="Portfolio 1"> </div>
                 <div class="item_overlay">
                     <div class="item_info">
                         <h4 class="project_name">SMS Mobile App</h4>
@@ -165,7 +165,7 @@
 
             <!-- Portfolio Item-->
             <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">
-                <div class="portfolio_img"> <img src="img/portfolio_pic2.jpg" alt="Portfolio 1"> </div>
+                <div class="portfolio_img"> <img src="{{ asset('assets/img/portfolio_pic2.jpg') }}" alt="Portfolio 1"> </div>
                 <div class="item_overlay">
                     <div class="item_info">
                         <h4 class="project_name">Finance App</h4>
@@ -176,7 +176,7 @@
 
             <!-- Portfolio Item -->
             <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design  isotope-item">
-                <div class="portfolio_img"> <img src="img/portfolio_pic3.jpg" alt="Portfolio 1"> </div>
+                <div class="portfolio_img"> <img src="{{ asset('assets/img/portfolio_pic3.jpg') }}" alt="Portfolio 1"> </div>
                 <div class="item_overlay">
                     <div class="item_info">
                         <h4 class="project_name">GPS Concept</h4>
@@ -187,7 +187,7 @@
 
             <!-- Portfolio Item-->
             <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  android  prototype web isotope-item">
-                <div class="portfolio_img"> <img src="img/portfolio_pic4.jpg" alt="Portfolio 1"> </div>
+                <div class="portfolio_img"> <img src="{{ asset('assets/img/portfolio_pic4.jpg') }}" alt="Portfolio 1"> </div>
                 <div class="item_overlay">
                     <div class="item_info">
                         <h4 class="project_name">Shopping</h4>
@@ -198,7 +198,7 @@
 
             <!-- Portfolio Item -->
             <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">
-                <div class="portfolio_img"> <img src="img/portfolio_pic5.jpg" alt="Portfolio 1"> </div>
+                <div class="portfolio_img"> <img src="{{ asset('assets/img/portfolio_pic5.jpg') }}" alt="Portfolio 1"> </div>
                 <div class="item_overlay">
                     <div class="item_info">
                         <h4 class="project_name">Managment</h4>
@@ -209,7 +209,7 @@
 
             <!-- Portfolio Item -->
             <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  web isotope-item">
-                <div class="portfolio_img"> <img src="img/portfolio_pic6.jpg" alt="Portfolio 1"> </div>
+                <div class="portfolio_img"> <img src="{{ asset('assets/img/portfolio_pic6.jpg') }}" alt="Portfolio 1"> </div>
                 <div class="item_overlay">
                     <div class="item_info">
                         <h4 class="project_name">iPhone</h4>
@@ -220,7 +220,7 @@
 
             <!-- Portfolio Item  -->
             <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design web isotope-item">
-                <div class="portfolio_img"> <img src="img/portfolio_pic7.jpg" alt="Portfolio 1"> </div>
+                <div class="portfolio_img"> <img src="{{ asset('assets/img/portfolio_pic7.jpg') }}" alt="Portfolio 1"> </div>
                 <div class="item_overlay">
                     <div class="item_info">
                         <h4 class="project_name">Nexus Phone</h4>
@@ -231,7 +231,7 @@
 
             <!-- Portfolio Item -->
             <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   android isotope-item">
-                <div class="portfolio_img"> <img src="img/portfolio_pic8.jpg" alt="Portfolio 1"> </div>
+                <div class="portfolio_img"> <img src="{{ asset('assets/img/portfolio_pic8.jpg') }}" alt="Portfolio 1"> </div>
                 <div class="item_overlay">
                     <div class="item_info">
                         <h4 class="project_name">Android</h4>
@@ -264,10 +264,10 @@
     <div class="client_logos"><!--client_logos-->
         <div class="container">
             <ul class="fadeInRight animated wow">
-                <li><a href="javascript:void(0)"><img src="img/client_logo1.png" alt=""></a></li>
-                <li><a href="javascript:void(0)"><img src="img/client_logo2.png" alt=""></a></li>
-                <li><a href="javascript:void(0)"><img src="img/client_logo3.png" alt=""></a></li>
-                <li><a href="javascript:void(0)"><img src="img/client_logo5.png" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="{{ asset('assets/img/client_logo1.png') }}" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="{{ asset('assets/img/client_logo2.png') }}" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="{{ asset('assets/img/client_logo3.png') }}" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="{{ asset('assets/img/client_logo5.png') }}" alt=""></a></li>
             </ul>
         </div>
     </div>
@@ -282,7 +282,7 @@
             <div class="team_area">
                 <div class="team_box wow fadeInDown delay-03s">
                     <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
-                    <img src="img/team_pic1.jpg" alt="">
+                    <img src="{{ asset('assets/img/team_pic1.jpg') }}" alt="">
                     <ul>
                         <li><a href="javascript:void(0)" class="fa fa-twitter"></a></li>
                         <li><a href="javascript:void(0)" class="fa fa-facebook"></a></li>
@@ -297,7 +297,7 @@
             <div class="team_area">
                 <div class="team_box  wow fadeInDown delay-06s">
                     <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
-                    <img src="img/team_pic2.jpg" alt="">
+                    <img src="{{ asset('assets/img/team_pic2.jpg') }}" alt="">
                     <ul>
                         <li><a href="javascript:void(0)" class="fa fa-twitter"></a></li>
                         <li><a href="javascript:void(0)" class="fa fa-facebook"></a></li>
@@ -312,7 +312,7 @@
             <div class="team_area">
                 <div class="team_box wow fadeInDown delay-09s">
                     <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
-                    <img src="img/team_pic3.jpg" alt="">
+                    <img src="{{ asset('assets/img/team_pic3.jpg') }}" alt="">
                     <ul>
                         <li><a href="javascript:void(0)" class="fa fa-twitter"></a></li>
                         <li><a href="javascript:void(0)" class="fa fa-facebook"></a></li>
