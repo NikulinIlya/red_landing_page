@@ -19,6 +19,6 @@ class IndexController extends Controller
         $services = Service::where('id', '<', 20)->get();
         $people = People::take(3)->get();
 
-        return view('layouts.site');
+        return view('site.index');
     }
 }
