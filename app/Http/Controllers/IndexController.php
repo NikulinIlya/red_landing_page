@@ -19,6 +19,29 @@ class IndexController extends Controller
         $services = Service::where('id', '<', 20)->get();
         $people = People::take(3)->get();
 
-        return view('site.index');
+        $menu = array();
+        foreach ($pages as $page) {
+            $item = array('title'=>$page->name, 'alias'=>$page->alias);
+            array_push($menu, $item);
+        }
+        $item = array('title'=>'Services', 'alias'=>'service');
+        array_push($menu, $item);
+
+        $item = array('title'=>'Portfolio', 'alias'=>'Portfolio');
+        array_push($menu, $item);
+
+        $item = array('title'=>'Team', 'alias'=>'team');
+        array_push($menu, $item);
+
+        $item = array('title'=>'Contact', 'alias'=>'contact');
+        array_push($menu, $item);
+
+        return view('site.index', array(
+            'menu' => $menu,
+            'pages' => $pages,
+            'services' => $services,
+            'portfolios' => $portfolios,
+            'people' => $people,
+        ));
     }
 }
