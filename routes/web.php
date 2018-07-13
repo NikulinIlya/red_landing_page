@@ -14,7 +14,7 @@
 /*
  * группа маршрутов пользовательской части
  */
-Route::group(['middleware'=>'web'], function () {
+Route::group([], function () {
     Route::match(['get', 'post'], '/', ['uses'=>'IndexController@execute', 'as'=>'home']);
     Route::get('/page/{alias}', ['uses'=>'PageController@execute', 'as'=>'page']);
 
