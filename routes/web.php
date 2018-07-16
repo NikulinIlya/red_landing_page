@@ -42,7 +42,7 @@ Route::group(['prefix'=>'admin', 'middleware'=>'auth'], function () {
         // admin/pages
         Route::get('/', ['uses'=>'PagesController@execute', 'as'=>'pages']);
         // admin/pages/add
-        Route::match(['get','post'], '/add', ['uses'=>'PagesController@execute', 'as'=>'pagesAdd']);
+        Route::match(['get','post'], '/add', ['uses'=>'PagesAddController@execute', 'as'=>'pagesAdd']);
         // admin/edit/2
         Route::match(['get', 'post', 'delete'], '/edit/{page}', ['uses'=>'PagesEditController@execute', 'as'=>'pagesEdit']);
     });
