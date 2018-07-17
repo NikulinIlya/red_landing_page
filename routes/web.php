@@ -24,7 +24,6 @@ Route::group([], function () {
 /*
  * группа маршрутов закрытой части
  */
-//admin/service
 Route::group(['prefix'=>'admin', 'middleware'=>'auth'], function () {
 
     // admin
