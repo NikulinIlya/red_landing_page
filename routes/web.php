@@ -46,7 +46,7 @@ Route::group(['prefix'=>'admin', 'middleware'=>'auth'], function () {
     });
 
 
-    Route::resource('/portfolios', 'PortfolioController', ['except' => [
+    Route::resource('/portfolio', 'PortfolioController', ['except' => [
         'show'
     ]]);
 
