@@ -1,4 +1,6 @@
-## A simple landing page using the Laravel framework
+## A simple landing page using the Laravel 5 framework
+
+And Unique Free Responsive Website Template
 
 
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
