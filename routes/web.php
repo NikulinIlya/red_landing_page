@@ -17,7 +17,6 @@
 Route::group([], function () {
     Route::match(['get', 'post'], '/', ['uses'=>'IndexController@execute', 'as'=>'home']);
     Route::get('/page/{alias}', ['uses'=>'PageController@execute', 'as'=>'page']);
-
     Route::auth();
 });
 
@@ -47,21 +46,16 @@ Route::group(['prefix'=>'admin', 'middleware'=>'auth'], function () {
     });
 
 
-    Route::group(['prefix'=>'portfolios'], function () {
+    Route::resource('/portfolios', 'PortfolioController', ['except' => [
+        'show'
+    ]]);
 
-        Route::get('/', ['uses'=>'PortfolioController@execute', 'as'=>'portfolio']);
-        Route::match(['get','post'], '/add', ['uses'=>'PortfolioController@execute', 'as'=>'portfolioAdd']);
-        Route::match(['get', 'post', 'delete'], '/edit/{portfolio}', ['uses'=>'PortfolioEditController@execute', 'as'=>'portfolioEdit']);
-    });
-
-    Route::group(['prefix'=>'services'], function () {
-
-        Route::get('/', ['uses'=>'ServiceController@execute', 'as'=>'services']);
-        Route::match(['get','post'], '/add', ['uses'=>'ServiceController@execute', 'as'=>'serviceAdd']);
-        Route::match(['get', 'post', 'delete'], '/edit/{service}', ['uses'=>'ServiceEditController@execute', 'as'=>'serviceEdit']);
+    Route::group(['prefix' => 'services'], function () {
+        Route::get('/', ['uses' => 'ServiceController@index', 'as' => 'services']);
+        Route::get('/add', ['uses' => 'ServiceController@create', 'as' => 'servicesAdd']);
+        Route::post('/add', ['uses' => 'ServiceController@store', 'as' => 'servicesStore']);
+        Route::get('/edit/{service}', ['uses' => 'ServiceController@edit', 'as' => 'servicesEdit']);
+        Route::patch('/edit/{service}', ['uses' => 'ServiceController@update', 'as' => 'servicesUpdate']);
+        Route::delete('/edit/{service}', ['uses' => 'ServiceController@delete', 'as' => 'servicesDelete']);
     });
 });
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
